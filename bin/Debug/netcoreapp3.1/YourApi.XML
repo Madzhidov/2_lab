@@ -7,19 +7,19 @@
         <member name="T:_1_lab.Crypto">
             <summary>
             Класс для шифрования/дешифромания с помощтю XOR
-            </summary>
+            /// </summary>
         </member>
         <member name="M:_1_lab.Crypto.Encode(System.String,System.String,System.String)">
             <summary>
-            Шифрование
+            Кодирование/Декодирование файлов
             </summary>
             <param name="Path">Путь</param>
-            <param name="pKey">Ключ</param>
-            <param name="Method">e - кодирование, d - декодирование</param>
+            <param name="pKey">Пароль для шифрации</param>
+            <param name="method">"e" - шифрация, "d" - дешифрация</param>
         </member>
         <member name="T:_1_lab.Menu">
             <summary>
-            Класс меню
+            Меню
             </summary>
         </member>
         <member name="M:_1_lab.Menu.Title">
@@ -27,35 +27,36 @@
             Вывод всего меню
             </summary>
         </member>
-        <member name="M:_1_lab.Menu.Execute(System.Int32)">
-            <summary>
-            Выполнить команду
-            </summary>
-            <param name="command">Команда</param>
-        </member>
         <member name="T:_1_lab.Reader">
             <summary>
-            Класс чтения и записи текстового файла
+            Чтение и запись текстовых файлов
             </summary>
         </member>
         <member name="M:_1_lab.Reader.Read(System.String)">
             <summary>
             Чтение файла
             </summary>
-            <param name="path">Путь к файлу</param>
-            <returns>Данные в файле</returns>
+            <param name="path">Путь</param>
+            <returns>Строка, ситанная из файла </returns>
         </member>
         <member name="M:_1_lab.Reader.Write(System.String,System.String,System.String)">
             <summary>
             Запись в файл
             </summary>
             <param name="path">Путь</param>
-            <param name="data">Данные</param>
-            <param name="method">a - добавить в конец файла, n -создать файл и записать туда</param>
+            <param name="data">Строка</param>
+            <param name="method">a - добавить в конец файла, n - создать и записать в файл</param>
+        </member>
+        <member name="M:_1_lab.Reader.GetFileInfo(System.String)">
+            <summary>
+            Информация о файле
+            </summary>
+            <param name="path">Путь</param>
+            <returns>List of strings: [1] - имя файла, [2] -время создания, [3] - размер </returns>
         </member>
         <member name="M:_1_lab.Reader.Palindrom(System.String)">
             <summary>
-            Палиндромы в файле
+            Количество палиндромов в файле
             </summary>
             <param name="path">Путь к файлу</param>
             <returns>Количество слов - палиндромов</returns>
