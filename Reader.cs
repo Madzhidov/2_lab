@@ -71,5 +71,18 @@ namespace _1_lab
             return temp;
         }
 
+    /// <summary>
+    /// Перемещает файл по выбранному пути
+    /// </summary>
+    /// <param name="path">Путь к файлу</param>
+    /// <param name="newPath">Новый путь файла</param>
+        public static void MoveFile(string path, string newPath)
+        {
+             System.IO.FileInfo fileInf = new  System.IO.FileInfo(path);
+            if (fileInf.Exists)
+            {
+            fileInf.MoveTo(newPath+"/"+fileInf.Name);
+            }
+        }
     }
 }

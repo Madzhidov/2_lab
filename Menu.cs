@@ -6,7 +6,7 @@ namespace _1_lab
     public static class Menu
     {
         
-        private const string titleMessage = "\tМеню:\n1) read - чтение из файла;\n2) write - запись в файл\n3)crypto - шифрация/дешифрация файла\n4)palindrom - посчитать количество слов-палиндромов в файле\n5)fileinfo - информация о файле";
+        private const string titleMessage = "\tМеню:\n1) read - чтение из файла;\n2) write - запись в файл\n3)crypto - шифрация/дешифрация файла\n4)palindrom - посчитать количество слов-палиндромов в файле\n5)fileinfo - информация о файле\n6)move - переместить файл";
         private const string Message = "\tВведите путь к файлу:";
          private const string caseMessage = "a - записать в конец файла;\nn - перезаписать файл";
          private const string errMessage = "Выберете из списка!";
@@ -59,6 +59,13 @@ namespace _1_lab
                 {
                    System. Console.WriteLine(t);
                 }
+                break;
+                 case 6:
+                System.Console.WriteLine(Message);
+                temp =System.Console.ReadLine();
+                System.Console.WriteLine("Папка для перемещения:");
+                data=System.Console.ReadLine();
+                Reader.MoveFile(temp,data);
                 break;
             }
             Title();

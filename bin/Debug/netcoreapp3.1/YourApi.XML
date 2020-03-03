@@ -61,5 +61,12 @@
             <param name="path">Путь к файлу</param>
             <returns>Количество слов - палиндромов</returns>
         </member>
+        <member name="M:_1_lab.Reader.MoveFile(System.String,System.String)">
+            <summary>
+            Перемещает файл по выбранному пути
+            </summary>
+            <param name="path">Путь к файлу</param>
+            <param name="newPath">Новый путь файла</param>
+        </member>
     </members>
 </doc>
