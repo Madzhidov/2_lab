@@ -1,3 +1,4 @@
+///Привет
 using System.Linq;
 namespace _1_lab
 {
